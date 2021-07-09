@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gravekeeper | Registration</title>
+
+    <!-- CSS Declaration -->
+    <link rel="stylesheet" href="bootstrap4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/registration_style.css">
+
+</head>
+<body>
+
+    <div class="heading-container">
+        <h3 class="page-header">GRAVEKEEPER</h3>
+        <p class="header-caption text-muted">The information you will be submitting will be validated by the management. <br> This validation may take a few days to complete, so please be patient.</p>
+    </div>
+
+    <div class="main-container mx-auto">
+        <div class="row">
+            <div class="record-container col-lg-8">
+                <h4 class="record-heading">Record of the Deceased</h4>
+                <p class="record-caption text-muted">Please submit the exact information about your loved one who has passed away.</p>
+                <form class="record-form" action="">
+
+                    <div class="row">
+                        <div class="col-6">
+                            <label for="deceased-firstname" class="form-label label">First Name</label>
+                            <input type="text" class="form-control" name="deceased-firstname">
+                        </div>
+                        <div class="col-6">
+                            <label for="deceased-lastname" class="form-label label">Last Name</label>
+                            <input type="text" class="form-control" name="deceased-lastname">
+                        </div>
+                        <div class="col-6">
+                            <label for="deceased-birthday" class="form-label label">Date of Birth</label>
+                            <input type="date" class="form-control" name="deceased-birthday">
+                        </div>
+                        <div class="col-6">
+                            <label for="deceased-deathday" class="form-label label">Date of Death</label>
+                            <input type="date" class="form-control" name="deceased-deathday">        
+                        </div>
+                        <div class="col-12">
+                            <label for="grave-no" class="form-label label">Grave No.</label>
+                            <input type="number" class="form-control" name="grave-no">
+                            <p class="grave-caption text-muted">Refer to the map in the homepage for the grave no.</p>    
+                        </div>
+                    </div>                
+                </form>
+            </div>
+
+            <div class="register-container col-lg-4">
+                <h4 class="register-heading">Register for an account</h4>
+                <hr class="mt-4">
+                <form class="register-form" action="">
+                    <label for="register-firstname" class="form-label label">First Name</label>
+                    <input type="text" class="form-control" name="register-firstname">
+
+                    <label for="register-lastname" class="form-label label">Last Name</label>
+                    <input type="text" class="form-control" name="register-lastname">
+
+                    <label for="register-email" class="form-label label">Email</label>
+                    <input type="email" class="form-control" name="register-email">
+
+                    <label for="register-password" class="form-label label">Password</label>
+                    <input type="password" class="form-control" name="register-password">
+                    
+                    <button class="btn btn-submit mt-3 float-right" name="btn-submit">Submit</button>
+                </form>
+            </div>
+
+            <!-- <button class="btn btn-submit" name="btn-submit">Submit</button> -->
+
+        </div>
+    </div>
+
+    <!-- Jquery Declaration -->
+    <script src="jquery/jquery.min.js"></script>
+    <script src="bootstrap4/js/bootstrap.min.js"></script>
+</body>
+</html>

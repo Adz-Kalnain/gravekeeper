@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="DataTables/datatables.css">
+
+    <title>GraveKeeper - Home</title>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <h3><a href="#">GraveKeeper</a></h3>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#">Login</a></li>
+                <li><a href="registration.html">Register</a></li>
+                <li><a href="#">Home</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="map-header">
+        <h4 class="map-header-caption">Find a grave</h4>
+        <p class="map-caption">Register the grave of your loved one for easy search and tracking of their grave</p>
+    </div>
+
+    <div class="content">
+        <div class="row">
+            <div class="col-6 mini-map">
+                <img src="images/satelitemap.jpg" alt="Mampang Muslim Cemetery">
+            </div>
+            <div class="col-6 search-box">
+                <table
+                    class="table"
+                    data-toggle="table" 
+                    data-search="true"
+                    data-pagination="true"
+                    data-url="data.json">
+                    <thead>
+                        <tr>
+                            <th data-field="graveno" data-sortable="true">Grave no.</th>
+                            <th data-field="name" data-sortable="true">Name</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+
+        <footer class="mb-3 mt-3 text-muted text-small">
+            <p class="mb-2">&copy; GraveKeeper 2021</p>
+        </footer>
+    </div>
+
+    <script src="jquery/jquery.slim.min.js"></script>
+    <script src="bootstrap4/js/bootstrap.min.js"></script>
+    <script src="DataTables/datatables.js"></script>
+
+    <script>
+        $(document).ready( function () {
+        $('.table').DataTable();
+        } );
+    </script>
+
+    <script>
+        $('.table').DataTable( {
+            select: true
+        } );
+    </script>
+
+</body>
+</html>
